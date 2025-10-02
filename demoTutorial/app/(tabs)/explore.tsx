@@ -8,6 +8,7 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { IconSymbol } from '@/components/ui/icon-symbol';
 import { Fonts } from '@/constants/theme';
+import { Link } from 'expo-router';
 
 export default function TabTwoScreen() {
   return (
@@ -94,6 +95,14 @@ export default function TabTwoScreen() {
           ),
         })}
       </Collapsible>
+
+      <Link href="/settings" style={styles.link}>
+        <ThemedText type="link">Go to Settings screen</ThemedText>
+      </Link>
+
+      <Link href={{pathname : "/details/[id]", params: { id: '4545' }}}  style={styles.link}>
+        <ThemedText type="link">Go to Details screen</ThemedText>
+      </Link>
     </ParallaxScrollView>
   );
 }
@@ -109,4 +118,5 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     gap: 8,
   },
+  link: { marginTop: 15, paddingVertical: 15 }
 });
