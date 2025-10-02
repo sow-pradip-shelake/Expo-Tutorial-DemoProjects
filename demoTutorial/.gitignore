@@ -1,0 +1,47 @@
+```
+# Node modules
+node_modules/
+
+# Expo specific
+.expo/
+.expo-shared/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+expo-debug.log
+
+# Metro bundler cache
+.expo/web/cache
+.expo/web/build
+
+# macOS
+.DS_Store
+
+# Android build
+android/.gradle/
+android/app/build/
+android/local.properties
+
+# iOS build
+ios/Pods/
+ios/build/
+ios/DerivedData/
+
+# VSCode
+.vscode/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Coverage
+coverage/
+
+# Misc
+*.log
+*.lock
+```
+
