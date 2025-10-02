@@ -1,4 +1,4 @@
-import { Text, View, TouchableOpacity } from "react-native";
+import { Text, View, TouchableOpacity, Button } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { router } from "expo-router";
 
@@ -14,6 +14,10 @@ export default function SettingsScreen() {
       <View style={{ padding: 16 }}>
         <Text>Settings Screen</Text>
       </View>
+
+       <Button title="Back all" onPress={() => {
+              router.dismissAll();
+            }} />
     </SafeAreaView>
   )
 }

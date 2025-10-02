@@ -100,9 +100,11 @@ export default function TabTwoScreen() {
         <ThemedText type="link">Go to Settings screen</ThemedText>
       </Link>
 
-      <Link href={{pathname : "/details/[id]", params: { id: '4545' }}}  style={styles.link}>
+      <Link href={{ pathname: "/details/[id]", params: { id: '4545' } }} style={styles.link}>
         <ThemedText type="link">Go to Details screen</ThemedText>
       </Link>
+
+      <Link href="/details/111">View first user details</Link>
     </ParallaxScrollView>
   );
 }
